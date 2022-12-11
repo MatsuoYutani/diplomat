@@ -1,27 +1,38 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "myapp",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "node server.js"
+    "dev": "npm run tauri dev",
+    "build": "npm run tauri build",
+    "tauri": "tauri",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "sveltekit:dev": "vite dev",
+    "sveltekit:build": "vite build"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.0",
-    "rollup": "^2.3.4",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "svelte": "^3.0.0"
+    "@sveltejs/adapter-static": "^1.0.0-next.49",
+    "@sveltejs/vite-plugin-svelte": "^1.1.0",
+    "@tauri-apps/cli": "^1.2.2",
+    "@tsconfig/svelte": "^3.0.0",
+    "svelte": "^3.52.0",
+    "svelte-check": "^2.9.2",
+    "svelte-preprocess": "^4.10.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
   },
   "dependencies": {
-    "axios": "^1.2.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "sirv-cli": "^2.0.0"
+    "@tauri-apps/api": "^1.2.0",
+    "@types/xml-js": "^1.0.0",
+    "browserify-zlib": "^0.2.0",
+    "events": "^3.3.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "svelte-routing": "^1.6.0",
+    "util": "^0.12.5",
+    "xml-js": "^1.6.11"
   }
 }
