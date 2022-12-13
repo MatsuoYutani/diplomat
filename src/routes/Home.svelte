@@ -1,16 +1,18 @@
 <script lang="ts">
   import svelteLogo from "../assets/svelte.svg";
   import NavMenu from "../lib/NavMenu.svelte";
+
+  // const showCreateFileDialog = () => {
+  //   console.log("Called from child!");
+  // };
 </script>
 
 <main>
-  <h1 id="title"><a href="/">📕 Diplomat</a></h1>
-
   <div class="card">
+    <h1 id="title"><a href="/">📕 Diplomat</a></h1>
     <NavMenu />
+    <div class="card boxed">Aqui ficarão os projetos/arquivos recentes</div>
   </div>
-
-  <div class="card boxed">Aqui ficarão os projetos/arquivos recentes</div>
 </main>
 
 <style>

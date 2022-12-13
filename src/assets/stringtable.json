@@ -1,0 +1,252 @@
+{
+  "declaration": {
+    "attributes": {
+      "version": "1.0",
+      "encoding": "utf-8"
+    }
+  },
+  "elements": [
+    {
+      "type": "element",
+      "name": "Project",
+      "attributes": {
+        "name": "Any Name"
+      },
+      "elements": [
+        {
+          "type": "element",
+          "name": "Package",
+          "attributes": {
+            "name": "Mission One"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "Container",
+              "attributes": {
+                "name": "Some Words"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "Key",
+                  "attributes": {
+                    "ID": "STR_TAG_Yes"
+                  },
+                  "elements": [
+                    {
+                      "type": "element",
+                      "name": "Original",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "yes"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "English",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "yes"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Czech",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "ano"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "French",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "oui"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "German",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "ja"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Italian",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "sì"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Polish",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "tak"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Portuguese",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "sim"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Russian",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "да"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Spanish",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "sí"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Korean",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "네"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Japanese",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "はい"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Chinesesimp",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "是"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "name": "Chinese",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "是（繁體）"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "Key",
+                  "attributes": {
+                    "ID": "STR_TAG_No"
+                  },
+                  "elements": [
+                    {
+                      "type": "element",
+                      "name": "Original",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "no"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "name": "Container",
+              "attributes": {
+                "name": "Another Container"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "Key",
+                  "attributes": {
+                    "ID": "STR_TAG_formatted"
+                  },
+                  "elements": [
+                    {
+                      "type": "element",
+                      "name": "Original",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "Hello, %1."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "name": "Key",
+                  "attributes": {
+                    "ID": "STR_TAG_structuredText"
+                  },
+                  "elements": [
+                    {
+                      "type": "element",
+                      "name": "Original",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "Some text <t color='%1'>%2</t>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

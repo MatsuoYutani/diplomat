@@ -33,6 +33,7 @@
     "stream-browserify": "^3.0.0",
     "svelte-routing": "^1.6.0",
     "util": "^0.12.5",
+    "xml-formatter": "^2.6.1",
     "xml-js": "^1.6.11"
   }
 }
