@@ -10,6 +10,6 @@
   <!-- {#each routes as { name, pattern, component }}
     <Route path={pattern} {component} />
   {/each} -->
-  <Route path="/" component={HomePage} />
-  <Route path="/edit" component={EditPage} />
+  <Route path="/"><HomePage /></Route>
+  <Route path="/edit"><EditPage /></Route>
 </Router>

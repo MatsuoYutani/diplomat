@@ -245,6 +245,43 @@
               ]
             }
           ]
+        },
+        {
+          "type": "element",
+          "name": "Package",
+          "attributes": {
+            "name": "Mission Two"
+          },
+          "elements": [
+            {
+              "type": "element",
+              "name": "Container",
+              "attributes": {
+                "name": "Some Words2"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "Key",
+                  "attributes": {
+                    "ID": "STR_TAG_Test"
+                  },
+                  "elements": [
+                    {
+                      "type": "element",
+                      "name": "Original",
+                      "elements": [
+                        {
+                          "type": "text",
+                          "text": "Hello, %1."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }

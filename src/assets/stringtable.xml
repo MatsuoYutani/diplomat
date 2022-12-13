@@ -31,4 +31,11 @@
 			</Key>
 		</Container>
 	</Package>
+	<Package name="Mission Two">
+		<Container name="Some Words2">
+			<Key ID="STR_TAG_Test">
+				<Original>Hello, %1.</Original>
+			</Key>
+		</Container>
+	</Package>
 </Project>
