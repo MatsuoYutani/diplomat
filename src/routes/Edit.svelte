@@ -5,6 +5,7 @@
 
   const projectPath = strTable.elements[0];
   let projectName = projectPath.attributes.name;
+  let stringtableHTML;
   // console.log(projectPath);
 
   let packages = projectPath.elements;
@@ -14,6 +15,11 @@
   let stringtable = formatTableToObject(packages);
 
   var expanded = false;
+
+  let languages = Languages;
+  languages.forEach((_lang) => {
+    // _lang.enabled;
+  });
 
   const showCheckboxes = () => {
     var checkboxes = document.getElementById("checkboxes");
@@ -25,6 +31,13 @@
       expanded = false;
     }
   };
+
+  // const toggleLanguage = (objeto) => {
+  //   let classToHide = stringtableHTML.querySelector("." + objeto);
+  //   console.log("." + objeto);
+  //   console.log(JSON.stringify(classToHide));
+  //   // classToHide.style.display = 'none' ? "none": "block"
+  // };
 </script>
 
 <main>
@@ -75,7 +88,11 @@
     <div id="checkboxes">
       {#each Languages as lang}
         <label for={lang.className}>
-          <input id={lang.className} type="checkbox" />
+          <input
+            id={lang.className}
+            type="checkbox"
+            bind:checked={lang.enabled}
+          />
           {lang.className}
         </label>
       {/each}
@@ -84,23 +101,59 @@
 
   <!-- ! DEPENDE DO CONTAINER SELECIONADO -->
   <div>
-    <table>
+    <table bind:this={stringtableHTML}>
       <thead>
         <!-- Linha do Cabeçalho / Idiomas -->
         <tr>
+          <th> Tag </th>
           {#each Languages as lang}
-            <th>
-              {lang.className}
-            </th>
+            {#if lang.enabled}
+              <th>
+                {lang.className}
+              </th>
+            {/if}
           {/each}
         </tr>
       </thead>
+      <tbody>
+        {#each stringtable as _table}
+          {#each _table.containers as _cont}
+            {#each _cont.keys as _key}
+              <tr>
+                <td>{_key.ID}</td>
+                <!-- {#each _key.lines as _line} -->
+                {#each Languages as _lang}
+                  <!-- {#if _lang.enabled} -->
+                  <!-- {#if _line.language == _lang.className && _lang.enabled} -->
+                  {#if _lang.enabled}
+                    <td class={_key.ID}>
+                      {#if _key.lines.find((v) => {
+                        return v.language == _lang.className;
+                      })}
+                        {_key.lines.find((v) => {
+                          return v.language == _lang.className;
+                        }).text}
+                      {:else}
+                        Em Branco
+                      {/if}
+                    </td>
+                  {/if}
+                  <!-- {/if} -->
+                  <!-- {/each} -->
+                {/each}
+              </tr>
+            {/each}
+            <hr />
+          {/each}
+        {/each}
+      </tbody>
     </table>
   </div>
 </main>
 
 <style>
-  th {
+  th,
+  td {
     border: 1px solid black;
   }
 

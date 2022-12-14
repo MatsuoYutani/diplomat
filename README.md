@@ -2,7 +2,6 @@
 
 App para auxiliar na tradução de arquivos stringtable.xml de módulos de ArmA 3 de forma prática e intuitiva.
 
----
 
 ## Exemplo de um stringtable.xml:
 *Fonte: [Bohemia Interactive](https://community.bistudio.com/wiki/Stringtable.xml)*
