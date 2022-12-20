@@ -1,29 +1,42 @@
 <script lang="ts">
   import svelteLogo from "../assets/svelte.svg";
-  import NavMenu from "../lib/NavMenu.svelte";
 
   // const showCreateFileDialog = () => {
   //   console.log("Called from child!");
   // };
+  import Menu from "../lib/Menu.svelte";
+  import MdMenu from "svelte-icons/md/MdMenu.svelte";
+  import MdCreateNewFolder from "svelte-icons/md/MdCreateNewFolder.svelte";
+  import { Link } from "svelte-routing";
+  import { openFile } from "../utils/openFile";
+  import { createFile } from "../utils/createFile";
+
+  // let menuExpanded = true;
 </script>
 
-<main>
-  <div class="card">
-    <h1 id="title"><a href="/">📕 Diplomat</a></h1>
-    <NavMenu />
-    <div class="card boxed">Aqui ficarão os projetos/arquivos recentes</div>
+<div id="container">
+  <Menu>
+    <div class="icon"><MdMenu /></div>
+    <span class="menuTitle">Menu</span>
+    <hr />
+    <ul>
+      <li class="menuItem">
+        <Link to="/new">Novo projeto</Link>
+      </li>
+      <li class="menuItem">
+        <Link to="/open" on:click={openFile}>Abrir projeto</Link>
+      </li>
+      <li class="menuItem">
+        <Link to="/edit">Editar (TEMP)</Link>
+      </li>
+    </ul>
+    <p>Projeto Recente:</p>
+  </Menu>
+
+  <div id="screen">
+    <div class="card">
+      <h1 id="title"><a href="/">📕 Diplomat</a></h1>
+      <div class="card boxed">Aqui ficarão os projetos/arquivos recentes</div>
+    </div>
   </div>
-</main>
-
-<style>
-  h1#title > a {
-    text-decoration: none;
-    color: white;
-  }
-
-  div.boxed {
-    border: 3px solid #1a1a1a;
-    background-color: #1a1a1a;
-    border-radius: 8px;
-  }
-</style>
+</div>

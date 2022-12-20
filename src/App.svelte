@@ -6,10 +6,12 @@
   import EditPage from "./routes/Edit.svelte";
 </script>
 
-<Router>
-  <!-- {#each routes as { name, pattern, component }}
-    <Route path={pattern} {component} />
-  {/each} -->
-  <Route path="/"><HomePage /></Route>
-  <Route path="/edit"><EditPage /></Route>
-</Router>
+<main>
+  <Router>
+    <!-- {#each routes as { name, pattern, component }}
+      <Route path={pattern} {component} />
+    {/each} -->
+    <Route path="/"><HomePage /></Route>
+    <Route path="/edit"><EditPage /></Route>
+  </Router>
+</main>

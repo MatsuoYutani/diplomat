@@ -1,12 +1,17 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../src/assets/RobotoFont/Roboto-Regular.ttf");
+}
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #1A1A1A;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,67 +20,82 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+body {
+  margin: 0
 }
 
-body {
-  margin: 0;
+#container {
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  margin: 0;
+  min-width: 640px;
   min-height: 100vh;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#menu {
+  background-color: #2B2B2B;
+  height: auto;
+  width: 150px;
+  padding: 10px;
 }
 
-.card {
-  padding: 2em;
+#menu > * {
+  user-select: none;
+}
+#screen {
+  flex-grow: 1;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.icon {
+  width: 28px;
+  height:28px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.icon-small {
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menuTitle {
+  font-weight: bold;
+  font-size: 20px;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+.menuItem {
+  background-color: #4bac3f;
+  margin: 10px auto 0;
+  line-height: 32px;
+  padding-left: 5px;
+}
+
+.menuItem:hover {
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.menuItem a {
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.languageOption {
+  display: block;
+  background-color: #666666;
+  line-height: 18px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+
+#checkboxes {
+  display: none;
+
 }
