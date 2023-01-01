@@ -1,0 +1,45 @@
+:root {
+  --main-background:#2E3447;
+  --main-menu-hover:#606C94;
+}
+
+.invert {
+  filter:invert(100%)
+}
+
+body {
+  background-color: var(--main-background);
+}
+
+#menu {
+  background-color: #373E54;
+  height: 100%;
+}
+
+.currentPage {
+  background-color: var(--main-background);
+}
+
+.menuItem:hover {
+  background-color: var(--main-menu-hover);
+  cursor: pointer;
+}
+
+.menuField {
+  background-color: #516194;
+}
+
+.stringCell:hover {
+  background-color: #516194;
+  cursor:pointer;
+}
+
+.buttonCreate {
+  background-color: #516194;
+}
+
+.inputInvalid {
+  border: 2px solid #B91C1C;
+  color: #B91C1C
+
+}

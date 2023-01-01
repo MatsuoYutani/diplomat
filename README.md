@@ -41,3 +41,6 @@ App para auxiliar na tradução de arquivos stringtable.xml de módulos de ArmA 
 	</Package>
 </Project>
 ```
+
+## To-DO
+- Dar toggle em idiomas no filtro lateral em EditPage ao clicar no item da lista ao invés de apenas na checkbox
